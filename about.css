@@ -1,0 +1,142 @@
+body {
+	background-image: url(about.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+}
+
+nav {
+	background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.logo span.j {
+    color: red;
+}
+  
+.logo span.t {
+    font-family: 'Arial', sans-serif;
+    text-transform: lowercase;
+    font-size: 32px;
+}
+
+.logo span.j {
+    font-family: 'Times New Roman', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.logo span.a {
+    font-family: 'Arial', sans-serif;
+    text-transform: lowercase;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+  
+    nav li {
+        margin-left: 40px;
+    }
+    
+    .menu-icon {
+        display: none;
+        
+    }
+} 
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: #333;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+	    display: none;
+    }
+
+    nav li {
+	    width: 100%;
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    nav li:hover {
+        background-color: #555;
+    }
+  
+    .menu-icon {
+        display: inline-block;
+        margin-left: 10px; /* changed margin-left to 10px */
+        
+    }
+}
+
+/* Add styles for hamburger menu icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    
+
+}
+  
+  /* Add hover style for hamburger menu icon */
+  .menu-icon:hover {
+    color: #aaa;
+}
+  
+  /* Add click event for hamburger menu icon */
+  .menu-icon:hover ~ ul {
+    height: auto;
+}
+  
+  /* Add styles for expanded navigation menu */
+  nav ul.expanded {
+    height: auto !important;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
