@@ -42,6 +42,22 @@
     </header>   
     <div class="container">
       <h1>Contact Me</h1>
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqzwwzr" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">First Name</label>
+          <input type="text" name="name" id="full-name" placeholder="Enter First Name" required="">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="name" id="last-name" placeholder="Enter Last Name" required ="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="What would you like to tell me?" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+      
+      <!--
       <form action="https://formspree.io/f/moqzwwzr" method="POST">
         <div class="form-group">
           <label for="firstName">First Name: *</label>
@@ -62,6 +78,9 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+    -->
+    
+    
     
       <!-- Include jQuery library -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
