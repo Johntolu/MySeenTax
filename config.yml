@@ -1,0 +1,3 @@
+formspree:
+  email: your-email-address
+  redirect: /confirmation
