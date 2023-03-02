@@ -54,13 +54,7 @@ message.addEventListener("input", function (event) {
   }
 });
 
-// hamburger menu
-const menuIcon = document.querySelector('.menu-icon');
-const navUl = document.querySelector('nav ul');
 
-menuIcon.addEventListener('click', () => {
-  navUl.classList.toggle('expanded');
-});
 
 
 
