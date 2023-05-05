@@ -1,5 +1,5 @@
 body {
-    background-image: url(about.jpg);
+    background: linear-gradient(to bottom, #FF5733 0%, #FFC300 50%, #581845 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,15 +56,24 @@ body {
    
 }
 
-.container-fluid {
-    color: white;
-    width: 55%;
-    margin-left: 1%;
-}
-
-.container-fluid h1 {
-    font-size: 14px;
+.ebook-title {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
   }
+  
+  .ebook-description {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .ebook-price {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+  }
+  
   
 
 
@@ -151,7 +160,7 @@ body {
         position:fixed;
         top: 0;
         right: -300px;
-        background: rgb(81, 27, 27);
+        background: linear-gradient(to bottom, #FF5733 0%, #FFC300 50%, #581845 100%);
         width: 200px;
         height: 450px;
         padding-top: 65px;

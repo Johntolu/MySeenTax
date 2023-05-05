@@ -19,7 +19,7 @@
     
     <!-- Include custom CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources.css">
     <script src="script.js"></script>
     <script src="formSubmission.js"></script>
   </head>
@@ -48,23 +48,28 @@
       </ul>
     </nav>
 
-    <div class="container-fluid text-center" style="padding-top: 100px;">
-      <div class="row">
-        <div class="col">
-          <h1>Welcome to American Dream Hub</h1>
-          <small>Whether it be through study visa, marriage, asylum, or employment, 
-            we are here to help you achieve your American Dream!</small>
-        </div>
-      </div>
-    </div>
-  </body>
+	<main>
+		<section id="ebook">
+      <h2 class="ebook-title">The F1 Visa Interview Guide</h2>
+			<p class="ebook-description">Our eBook is a comprehensive guide that will help you ace your F1 visa interview. 
+        <br>It contains real questions and answers provided at past interview sessions, 
+        <br>including approved and denied visa cases.</p>
+      <p class="ebook-price">Buy now for only $199.99 and get instant access to the eBook.</p>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="toluadedoja@gmail.com">
+                <input type="hidden" name="lc" value="US">
+                <input type="hidden" name="item_name" value="The F1 Visa Interview Guide">
+                <input type="hidden" name="amount" value="199.99">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="button_subtype" value="services">
+                <input type="hidden" name="no_note" value="0">
+                <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                <input type="hidden" name="return" value="thankyou.html">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>            
+		</section>
+	</main>
+</body>
 </html>
-  
-      
-  <!-- Include jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <!-- Include Bootstrap JS -->
-  
-
-
-
