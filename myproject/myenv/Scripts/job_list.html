@@ -1,0 +1,6 @@
+<ul>
+    {% for job in jobs %}
+        <li><a href="{{ job.url }}">{{ job.title }}</a> - {{ job.company }}, {{ job.location }}</li>
+    {% endfor %}
+</ul>
+    

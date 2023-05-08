@@ -1,6 +1,7 @@
 import csv
 from bs4 import BeautifulSoup
 import requests
+from myapp.models import JobListing
 
 # Specify the URL for the job listings page
 base_url = 'https://www.disabledperson.com/jobs'
@@ -41,6 +42,10 @@ with open('job_listings.csv', 'w', newline='', encoding='utf-8') as csvfile:
                     # Extract the company name
                     company_element = job_element.find('span')
                     company = company_element.get_text(strip=True)
+
+                    # Create a JobListing object and save it to the database
+                    job = JobListing(title=title, location=location, company=company)
+                    job.save()
 
                     # Write the job details to the CSV file
                     writer.writerow([title, location, company])
