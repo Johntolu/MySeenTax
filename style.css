@@ -5,6 +5,34 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to bottom, #FF5733 0%, #FFC300 50%, #581845 100%);
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 0; /* Adjust the padding as needed */
+  }
+  
+  .dropdown-menu li a {
+    color: #fff; /* Set your desired text color */
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover,
+  .dropdown-menu li a:focus {
+    background-color: #eedda7; /* Set your desired hover and focus background color */
+    color: #333; /* Set your desired hover and focus text color */
+  } 
   
 .header {
     position: relative;
@@ -42,7 +70,7 @@ body {
 .menu li a {
     color: white;
     text-decoration: none;
-    padding: 40px 25px;
+    padding: 5px 20px;
     font-size: 18px;
     line-height: 1;
     transition: 0.5s;
